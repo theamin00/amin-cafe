@@ -130,3 +130,169 @@ margin-bottom: 10px;
     border-radius: 10px;
 }
 
+/* ==============================
+   Responsive Fix - Cafe Amin
+   ============================== */
+
+/* 1. محاسبه صحیح عرض عناصر */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+/* 2. چیدمان واکنش‌گرای محصولات */
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: auto;
+    margin: 60px 24px;
+}
+
+.menu-list .menu-item {
+    width: auto;
+    min-width: 0;
+    padding: 18px;
+    border-radius: 18px;
+}
+
+/* 3. تنظیم اندازه تصاویر */
+.menu-list .menu-item .menu-img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0 auto 16px;
+}
+
+/* 4. جلوگیری از به‌هم‌ریختگی قیمت و دکمه */
+.menu-list .menu-item .menu-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.menu-list .menu-item .menu-info p {
+    margin: 0;
+    min-width: 0;
+}
+
+.menu-list .menu-item .menu-info .order {
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+/* 5. تنظیم هدر در تبلت و صفحه‌های کوچک */
+@media (max-width: 800px) {
+    #header {
+        flex-wrap: wrap;
+        gap: 16px;
+        margin: 12px;
+        padding: 12px 16px;
+    }
+
+    #header .navbar-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .menu-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 36px 16px;
+        gap: 16px;
+    }
+
+    #footer .footer-info-box {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    #footer .footer-info-box .footer-section {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* 6. تنظیم مخصوص موبایل */
+@media (max-width: 520px) {
+    #header {
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    #header .logo-link {
+        flex-shrink: 0;
+    }
+
+    #header nav {
+        max-width: 100%;
+    }
+
+    #header .navbar-list {
+        gap: 10px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    #header .header-contact {
+        max-width: 100%;
+    }
+
+    .menu-list {
+        grid-template-columns: minmax(0, 1fr);
+        margin: 24px 12px;
+        gap: 18px;
+    }
+
+    .menu-list .menu-item {
+        padding: 16px;
+    }
+
+    .menu-list .menu-item .menu-img {
+        max-width: 220px;
+        height: 190px;
+    }
+
+    .menu-list .menu-item .menu-title {
+        text-align: center;
+    }
+
+    .menu-list .menu-item .menu-info {
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    #footer {
+        padding: 24px 16px;
+    }
+
+    #footer .footer-info-box {
+        gap: 20px;
+    }
+
+    #footer .footer-info-box .footer-section .text {
+        line-height: 2;
+    }
+
+    #footer .footer-copyright {
+        overflow-wrap: anywhere;
+    }
+}
+
