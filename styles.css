@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+html{
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-style: italic;
+    background: darkolivegreen;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#header{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+/* .logo */
+#header .logo-link{
+line-height: 0;
+}
+#header .logo-link .logo-img{
+width: 60px;
+}
+/* header-list */
+#header .navbar-list {
+    display: flex;
+    gap: 30px;
+}
+/* contact link */
+#header .header-contact{
+background: darkolivegreen;
+color: white;
+padding: 8px 13px;
+border-radius: 10px;
+}
+#header .header-contact .contact-icon{
+margin-right: 5px;
+}
+/* products list style */
+.menu-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 80px 40px;
+}
+.menu-list .menu-item{
+    background: rgba(123, 150, 76, 0.795);
+border-radius: 18px;
+width: 29%;
+color: white;
+padding: 20px;
+}
+img{
+    /* width: 100%; */
+}
+.menu-list .menu-item .menu-img{
+ width: 200px; 
+ height: 200px;
+ object-fit: contain;
+ margin: 0 auto;  
+ display: block;
+}
+.menu-list .menu-item .menu-title{
+    border-top: 2px solid white;
+    padding-top: 15px;
+margin-bottom: 10px;
+}
+.menu-list .menu-item .menu-info{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-list .menu-item .menu-info .order{
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}ّ
+
+#footer {
+padding: 20px;
+ padding-top: 40px;
+}
+
+#footer .footer-info-box {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+   
+}
+#footer .footer-info-box .footer-section {
+    width: 50%;
+}
+#footer .footer-info-box .footer-section .footer-title {
+margin-bottom: 10px;
+}
+#footer .footer-info-box .footer-section .footer-title .text{
+    line-height: 35px;
+}
+#footer .footer-info-box .footer-section .footer-list .footer-link{
+    margin-bottom: 10px;
+}
+/* copyright */
+#footer .footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+}
+#footer {
+    background: white;
+    padding: 20px;
+    padding-top: 40px;
+}
+#footer .go-top-link{
+    background: darkolivegreen;
+    padding: 15px 18px;
+    border-radius: 10px;
+}
+
