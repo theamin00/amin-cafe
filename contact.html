@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,23 +13,141 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="shortcut icon" href="./photo/logo.png" type="image/x-icon">
 </head>
-<header id="header">
-      <a href="./index.html" class="logo-link"
-      style="align-items: center;
-    justify-content: space-between;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 10px 20px;"
+
+    <!--************* Start Header *************-->
+    <header id="header">
+      <a href="/" class="logo-link">
+        <img src="./photo/logo.png" alt="logo" class="logo-img" />
+      </a>
+
+      <!-- navbar list -->
+      <nav>
+        <ul class="navbar-list">
+          <li>
+            <a href="./index.html">
+              <i class="fas fa-home"></i>
+              صفحه اصلی</a
+            >
+          </li>
+
+          <li id="product-item">
+            <a href="#">
+              <i class="fas fa-clipboard-list"></i>
+              محصولات
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="submenu">
+              <li><a href="#">نوشیدنی ها</a></li>
+              <li><a href="#">ساندویچ</a></li>
+              <li><a href="#">پیتزا</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="./blog.html">
+              <i class="fab fa-blogger-b"></i>
+              وبلاگ
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- contact link -->
+      <a href="./contact.html" class="header-contact-link">
+        ارتباط با ما
+        <i class="fas fa-phone contact-icon"></i>
+      </a>
+    </header>
+
+    <!----- contact box ------->
+    <main>
+        <section class="contact">
+             <div class="message-box">
+            <h4 class="message-header-title"> جهت ارتباط</h4>
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://t.me/theamin00"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fa-brands fa-telegram"></i> @theamin00
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/theamin00"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="fa-brands fa-instagram"></i> @theamin00
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:psn.amin1380@gmail.com"
+ class="social-link"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-envelope"></i> psn.amin1380@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/theamin00"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github"></i> @theamin00
+                </a>
+              </li>
+               <li>
+                <a
+                  href="telto:09231507675"
+                  class="social-link"
+                  target="_blank"
+                >
+                  <i class="fa fa-phone"></i> تلفن
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        </div>
+    </main>
+
+<!--************* Start Footer *************-->
+    <footer id="footer">
+      <div class="footer-info-box">
+        <!-- about trisa -->
+        <section class="footer-section">
+          <h3 class="footer-title">درباره امین کافه</h3>
+          <p class="footer-text">
+            کافه امین یک کافه دنج و دوست داشتنی است که با طراحی داخلی زیبا و
+            آرامش‌بخش، مکانی ایده‌آل برای گذراندن اوقات فراغت به حساب می‌آید.
+            آنها انواع قهوه‌های با کیفیت، نوشیدنی‌های سرد و گرم، و همچنین کیک‌ها
+            و شیرینی‌های خوشمزه را ارائه می‌دهند. محیط کافه صمیمی و مناسب برای
+            گفتگو و مطالعه است. در مجموع، کافه تریسا یکی از گزینه‌های خوب برای
+            دوستداران قهوه و کافه‌های آرام است.
+          </p>
+        </section>
+        </section>
+      </div>
+      <p class="footer-copyright">
+        copyright |
+        <a href="https://www.instagram.com/theamin00" class="soufi-link" target="_blank"
+          >Theamin00</a
         >
-        
-        <a href="https://www.instagram.com/theamin00/" target="_blank" rel="noopener noreferrer">
-  <img src="./photo/insta (2).png" alt="Instagram" width="50">
-</a>
-          <i style='font-size:24px' class='fas'>&#xf2a0;</i>
-        </a>
-        &nbsp;
-         <a style="text-align: left;" href="./index.html"> <i class="fas fa-home"></i> صفحه اصلی</a>
+        &copy;
+      </p>
+      <a href="#" class="go-top-link">
+        <i class="fa fa-arrow-up"></i>
+      </a>
+    </footer>
+
 <body>
 </body>
 </html>
